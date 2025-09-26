@@ -23,7 +23,8 @@ public class AlumnoControlador {
             sc.nextLine();
             switch (menu) {
                 case 1:
-                     System.out.println("Nombre: ");
+                try {
+                    System.out.println("Nombre: ");
                      String nombre = sc.nextLine();
                      System.out.println("Apellido: ");
                      String apellido = sc.nextLine();
@@ -33,9 +34,18 @@ public class AlumnoControlador {
                      
                      Alumno alumno = new Alumno(nombre, apellido, edad);
                     alumnos.add(alumno);
+                } catch (Exception inserAlum) {
+                  System.out.println("Error al insertar alumno");
+                }
+                     
                     break;
                   case 2:
-                    vista.mostrarListaAlumnos(alumnos);
+                  try {
+                      vista.mostrarListaAlumnos(alumnos);
+                  } catch (Exception verAlumn) {
+                     System.out.println("Error al listar el alumno");
+                  }
+                  
                   break;
                   case 3:
                     salir =false;
