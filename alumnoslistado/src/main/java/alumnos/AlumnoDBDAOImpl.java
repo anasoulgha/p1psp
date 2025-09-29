@@ -4,7 +4,7 @@ import alumnos.psp.Alumno;
 
 public class AlumnoDBDAOImpl implements AlumnoDBDAO {
     
-    /*private AlumnoDBDAO alumnoDBDAO;
+    private AlumnoDBDAO alumnoDBDAO;
 
 public AlumnoDBDAOImpl(AlumnoDBDAO alumnoDBDAO){
 
@@ -16,7 +16,7 @@ public boolean guardarAlumno(String nombre, String apellido, int edad){
             int resultado =alumnoDBDAO.insertar(alumno);
             return resultado == 1;
 
-}*/
+}
 
 @Override
 public int insertar(Alumno alumno){
