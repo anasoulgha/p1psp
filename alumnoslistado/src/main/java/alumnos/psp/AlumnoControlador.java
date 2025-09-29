@@ -10,7 +10,7 @@ public class AlumnoControlador {
         Scanner sc=new Scanner(System.in);
 
         AlumnoVista vista = new AlumnoVista();
-        List<Alumno> alumnos = new ArrayList<>();
+       List<Alumno> alumnos = new ArrayList<>();
         boolean salir=true;
          
 
@@ -33,7 +33,7 @@ public class AlumnoControlador {
                       sc.nextLine();
                      
                      Alumno alumno = new Alumno(nombre, apellido, edad);
-                    alumnos.add(alumno);
+                   alumnos.add(alumno);
                 } catch (Exception inserAlum) {
                   System.out.println("Error al insertar alumno");
                 }

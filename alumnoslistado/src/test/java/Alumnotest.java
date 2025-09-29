@@ -5,6 +5,10 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
+   
+
+
+
 public class Alumnotest {
 
     @Test
@@ -16,4 +20,5 @@ public class Alumnotest {
       assertEquals(20, alumno.getEdad());
     }
 
+ 
 }
