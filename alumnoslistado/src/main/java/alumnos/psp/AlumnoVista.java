@@ -18,10 +18,10 @@ public class AlumnoVista {
     boolean salir = true;
 
     while (salir) {
-             System.out.println(OPCION_INSERTAR + ". Insertar alumno");
-        System.out.println(OPCION_LISTAR + ". Listar alumnos");
-        System.out.println(OPCION_SALIR + ". Salir");
-        System.out.print("Elige una opción: ");
+      System.out.println(OPCION_INSERTAR + ". Insertar alumno");
+      System.out.println(OPCION_LISTAR + ". Listar alumnos");
+      System.out.println(OPCION_SALIR + ". Salir");
+      System.out.print("Elige una opción: ");
       int menu = sc.nextInt();
       sc.nextLine();
       switch (menu) {

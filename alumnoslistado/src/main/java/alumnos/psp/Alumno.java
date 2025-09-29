@@ -3,11 +3,11 @@ package alumnos.psp;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Data @AllArgsConstructor
+@Data
+@AllArgsConstructor
 public class Alumno {
-    
+
     private String nombre;
     private String apellido;
     private int edad;
 }
-

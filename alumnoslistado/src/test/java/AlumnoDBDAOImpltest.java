@@ -25,17 +25,15 @@ public class AlumnoDBDAOImpltest {
     @Mock
     private AlumnoDBDAO alumnoDBDAO;
 
-
     @Test
-    public void guardarAlumnotest() throws Exception{
-       
+    public void guardarAlumnotest() throws Exception {
+
         Mockito.when(alumnoDBDAO.insertar(any(Alumno.class))).thenReturn(1);
 
         boolean resultado = alumnoDB.guardarAlumno("Anas", "Oulghazi", 20);
 
-        
         assertTrue(resultado);
-         verify(alumnoDBDAO, times(1)).insertar(any(Alumno.class));
+        verify(alumnoDBDAO, times(1)).insertar(any(Alumno.class));
     }
 
 }
