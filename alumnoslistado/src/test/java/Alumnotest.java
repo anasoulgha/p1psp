@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
 public class Alumnotest {
-class AlumnoTest {
 
     @Test
     void testAlumnoConstructor() {
@@ -16,5 +15,5 @@ class AlumnoTest {
       assertEquals("Oulghazi", alumno.getApellido());
       assertEquals(20, alumno.getEdad());
     }
-}
+
 }
